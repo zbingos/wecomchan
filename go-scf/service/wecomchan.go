@@ -44,7 +44,7 @@ func postWechatMsg(accessToken, msg, msgType, toUser string) error {
 		MsgType:                msgType,
 		DuplicateCheckInterval: 600,
 		Text: &model.MsgText{
-			Content: msg,
+			Content: "aaaa",
 		},
 	}
 	b, _ := jsoniter.Marshal(content)
